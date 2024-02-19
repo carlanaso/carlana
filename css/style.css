@@ -146,7 +146,7 @@ ul{
     transform: scale(1.5);
 }
 /*aside*/
-.aside
+/* .aside
 {
     width: 270px;
     background: var(--bg-black-100);
@@ -220,7 +220,7 @@ ul{
     top: 20px;
     border-radius: 5px;
     background:  var(--bg-black-100);
-    
+     */
     /* display: flex; /* Make sure it's always flex to keep items centered */
     /* justify-content: center; /* Center the toggler lines horizontally */
     /* align-items: center; /* Center the toggler lines vertically */
@@ -285,6 +285,7 @@ ul{
 {
     margin-right: 15px;
 }
+*/
 .home{
     /* min-height: 100vh; */
     display: flex;
