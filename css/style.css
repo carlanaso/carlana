@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 :root
 {
-    --bg-black-900:#273450; 
+    --bg-black-900:#1a1a1a; 
     --bg-black-100:#45609c;
     --bg-black-50:#2c3757;
     --text-black-900:#ffffff;
@@ -35,7 +35,8 @@ ul{
     background:var(--bg-black-900);
     min-height: 100vh;
     display: block;
-    padding :0 30px;
+    padding: 15px 0;
+    margin: 0;
     opacity: 1;
     left: 0;
     /* position: fixed;
@@ -86,9 +87,14 @@ ul{
 }
 .section-title
 {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 60px;
+    
+        font-family: "Cormorant", serif; /* Example font */
+        font-size: 2.5rem; /* Example size */
+        color: #ff007a; /* Example color */
+        margin-bottom: 20px; /* Space below the title */
+        text-align: center; /* Center-aligned titles */
+     
+      
 }
 .section-title h2
 {
@@ -328,13 +334,15 @@ h3.welcome
     height: 70px;
     width: 30px;
     border: 2px solid rgb(255, 255, 255);
-    position: absolute;
+    
     left: 50%;
     bottom: 0px;
     border-radius: 50px;
+    position: absolute;
+
     cursor: pointer;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .scroll-down::before,
 .scroll-down::after{
@@ -372,6 +380,13 @@ h3.welcome
         top: 90%;
     }
 }
+
+.education .education-content .class-info .class-item p {
+    white-space: nowrap; /* Prevents the text from wrapping */
+    overflow: hidden; /* Ensures that the overflow text is hidden */
+    text-overflow: ellipsis; /* Adds an ellipsis if the text overflows the container width */
+}
+
 .typing
 {
     color: var(--skin-color);
@@ -655,10 +670,10 @@ h3.welcome
 
 .education .education-content .class-info
 {
-    flex: 0 0 50%;
-    max-width: 50%;
+    display: flex;
+    flex-wrap: nowrap; /* Prevents the items from wrapping */
+    overflow-x: auto; /* Enables horizontal scrolling */
     margin-top: 40px;
-    
 }
 
 .education .education-content .class-info h3
@@ -820,3 +835,22 @@ h3.welcome
         max-width: 100%;
     }
 }
+
+.triangle-separator {
+    position: absolute; /* Ensure there's a relative container if needed */
+    left: 50%;
+    transform: translateX(-50%); /* Horizontally center */
+    background-color: var( --bg-black-900);
+    width: 100%; /* Take full width if you're centering the content */
+    text-align: center; /* Center the text/content */
+    margin-bottom: 10px;
+  }
+  
+  .triangle-separator::before {
+    content: '✧✧✧'; /* Three symbols */
+    font-size: 20px;
+    color: var(--text-black-700); /* Ensure this variable is defined */
+    display: inline-block; /* Treat content block as inline for text-align to work */
+    background-color: var( --bg-black-900);
+  }
+  
