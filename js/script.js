@@ -14,6 +14,7 @@ var typed = new Typed (".writing",{
 
 })
 
+
 document.querySelector('.scroll-down').addEventListener('click', function() {
     // Get the .home section element
     const homeSection = document.querySelector('.home');

@@ -30,6 +30,8 @@ body{
 ul{
     list-style: none;
 }
+
+
 .section
 {
     background:var(--bg-black-900);
@@ -158,7 +160,7 @@ ul{
     background: var(--bg-black-100);
     position: fixed;
     left: 0;
-    top: 0;
+    top: 0; 
     padding:30px;
     height:100%;
     display: flex;
@@ -380,6 +382,7 @@ h3.welcome
         top: 90%;
     }
 }
+
 
 .education .education-content .class-info .class-item p {
     white-space: nowrap; /* Prevents the text from wrapping */
