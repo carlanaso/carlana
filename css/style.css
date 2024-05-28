@@ -18,8 +18,37 @@
   
     --cloudTransparent: rgba(236, 204, 226, 0.8);
     --peachTransparent: rgba(255, 242, 228, 0.7);
+    --color-primary: #191d2b;
+    --color-secondary: #567572FF;
+    --color-white: #FFFFFF;
+    --color-black: #000;
+    --color-grey0: #f8f8f8;
+    --color-grey-1: #dbe1e8;
+    --color-grey-2: #b2becd;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #454e56;
+    --color-grey-5: #2a2e35;
+    --color-grey-6: #12181b;
+    --br-sm-2: 14px;
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,0.3);
+    --animation: all .4s ease-in-out;
 
 }
+
+  
+  .light-mode {
+    --color-primary: #f8f8f8;
+    --color-secondary: #567572FF;
+    --color-white: #191d2b;
+    --color-black: #000;
+    --color-grey0: #12181b;
+    --color-grey-1: #2a2e35;
+    --color-grey-2: #454e56;
+    --color-grey-3: #6c7983;
+    --color-grey-4: #b2becd;
+    --color-grey-5: #dbe1e8;
+    --color-grey-6: #f8f8f8;
+  }
 body{
     
     line-height:1.5;
@@ -858,6 +887,11 @@ h3.welcome
         flex: 0 0 100%;
         max-width: 100%;
     }
+    .timeline {
+        -ms-grid-columns: 1fr;
+            grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+      }
 }
 
 .triangle-separator {
@@ -880,6 +914,71 @@ h3.welcome
   
 
 
+  .timeline {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding-bottom: 3rem;
+  }
+  
+  .timeline .timeline-item {
+    position: relative;
+    padding-left: 3rem;
+    border-left: 1px solid var(--color-grey-5);
+  }
+  
+  .timeline .timeline-item .tl-icon {
+    position: absolute;
+    left: -27px;
+    top: 0;
+    background-color: var(--color-secondary);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  
+  .timeline .timeline-item .tl-icon i {
+    font-size: 1.3rem;
+  }
+  
+  .timeline .timeline-item .tl-duration {
+    padding: .2rem .6rem;
+    background-color: var(--color-grey-5);
+    border-radius: 15px;
+    display: inline-block;
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  
+  .timeline .timeline-item h5 {
+    padding: 1rem 0;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  
+  .timeline .timeline-item h5 span {
+    color: var(--color-grey-2);
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+  
+  .timeline .timeline-item p {
+    color: var(--color-grey-2);
+  }
+  
 /*  ----- Form ----- */
 form {}
 figure {
