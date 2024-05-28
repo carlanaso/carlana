@@ -4,6 +4,7 @@
 
 :root
 {
+    --skin-color:#ca5c73;
     --bg-black-900:#1a1a1a; 
     --bg-black-100:#45609c;
     --bg-black-50:#2c3757;
@@ -18,37 +19,11 @@
   
     --cloudTransparent: rgba(236, 204, 226, 0.8);
     --peachTransparent: rgba(255, 242, 228, 0.7);
-    --color-primary: #191d2b;
-    --color-secondary: #567572FF;
-    --color-white: #FFFFFF;
-    --color-black: #000;
-    --color-grey0: #f8f8f8;
-    --color-grey-1: #dbe1e8;
-    --color-grey-2: #b2becd;
-    --color-grey-3: #6c7983;
-    --color-grey-4: #454e56;
-    --color-grey-5: #2a2e35;
-    --color-grey-6: #12181b;
-    --br-sm-2: 14px;
-    --box-shadow-1: 0 3px 15px rgba(0,0,0,0.3);
-    --animation: all .4s ease-in-out;
-
+    
 }
 
   
-  .light-mode {
-    --color-primary: #f8f8f8;
-    --color-secondary: #567572FF;
-    --color-white: #191d2b;
-    --color-black: #000;
-    --color-grey0: #12181b;
-    --color-grey-1: #2a2e35;
-    --color-grey-2: #454e56;
-    --color-grey-3: #6c7983;
-    --color-grey-4: #b2becd;
-    --color-grey-5: #dbe1e8;
-    --color-grey-6: #f8f8f8;
-  }
+
 body{
     
     line-height:1.5;
@@ -926,14 +901,14 @@ h3.welcome
   .timeline .timeline-item {
     position: relative;
     padding-left: 3rem;
-    border-left: 1px solid var(--color-grey-5);
+    border-left: 1px solid var(--skin-color);
   }
   
   .timeline .timeline-item .tl-icon {
     position: absolute;
     left: -27px;
     top: 0;
-    background-color: var(--color-secondary);
+    background-color: var(--skin-color);
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -954,7 +929,7 @@ h3.welcome
   
   .timeline .timeline-item .tl-duration {
     padding: .2rem .6rem;
-    background-color: var(--color-grey-5);
+    background-color: var(--text-black-900);
     border-radius: 15px;
     display: inline-block;
     font-size: .8rem;
@@ -970,13 +945,13 @@ h3.welcome
   }
   
   .timeline .timeline-item h5 span {
-    color: var(--color-grey-2);
+    color: var(---text-black-900);
     font-weight: 500;
     font-size: 1.2rem;
   }
   
   .timeline .timeline-item p {
-    color: var(--color-grey-2);
+    color: var(--text-black-900);
   }
   
 /*  ----- Form ----- */
