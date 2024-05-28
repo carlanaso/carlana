@@ -901,7 +901,7 @@ h3.welcome
 /*  ----- Form ----- */
 form {}
 fieldset {
-  border: 2px solid var(--sky);
+  border: 2px solid var(c);
   margin-top: 1%;
   padding: 2%;
 }
@@ -920,14 +920,14 @@ button, input, select, textarea {
   font-family: inherit;
 }
 button{
-  border-right: 3px solid var(--darksky);
+  border-right: 3px solid var(--text-black-900);
   border-radius: 0 3px 3px 0;
-  background-color: var(--cloud);
-  color: var(--whitecloud);
+  background-color: var(--text-black-700);
+  color: var(--text-black-700);
 }
 button:hover{
-  color: var(--peachTransparent);
-  background-color: var(--sky);
+  color: var(--text-black-900);
+  background-color: var(--text-black-700);
 }
 input[type="text"],
 input[type="email"],
