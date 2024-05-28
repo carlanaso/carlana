@@ -6,7 +6,15 @@
     --bg-black-50:#2c3757;
     --text-black-900:#ffffff;
     --text-black-700:#eeeeee;
-
+    --grey: #bababa;
+    --cloud: #ffe5c9;
+    --sky: #8aa7ff;
+    --lightBlue: #99e5ff;
+    --darksky: #3240ff;
+    --whitecloud: rgb(116, 116, 116);
+  
+    --cloudTransparent: rgba(236, 204, 226, 0.8);
+    --peachTransparent: rgba(255, 242, 228, 0.7);
 
 }
 body{
@@ -893,12 +901,12 @@ button, input, select, textarea {
 button{
   border-right: 3px solid var(--text-black-900);
   border-radius: 0 3px 3px 0;
-  background-color: var(--text-black-700);
+  background-color: var(--grey);
   color: var(--text-black-700);
 }
 button:hover{
-  color: var(--text-black-900);
-  background-color: var(--text-black-700);
+  color: #45609c;
+  background-color: rgb(207, 141, 152);
 }
 input[type="text"],
 input[type="email"],
