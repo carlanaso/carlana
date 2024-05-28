@@ -101,11 +101,3 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function(event) {
-    document.getElementById("loading").style.display = "block";
-});
-
-// Hide loading animation when the page has fully loaded
-window.addEventListener("load", function() {
-    document.getElementById("loading").style.display = "none";
-});
