@@ -102,23 +102,3 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-window.addEventListener('load', function() {
-  var loadingScreen = document.getElementById('loading');
-  var animationWindow = document.getElementById('animationWindow');
-
-  // Hide the loading screen and start the animation
-  loadingScreen.style.display = 'none';
-  startAnimation();
-
-  // Function to start the animation
-  function startAnimation() {
-      var animData = {
-          container: animationWindow,
-          renderer: 'svg',
-          loop: true,
-          autoplay: true,
-          path: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/play_fill_loader.json'
-      };
-      var anim = bodymovin.loadAnimation(animData);
-  }
-});
