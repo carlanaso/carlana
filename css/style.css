@@ -796,7 +796,7 @@ h3.welcome
 
 .fade-in {
     opacity: 0;
-    transition: opacity 250ms ease-in;
+    transition: opacity 1000ms ease-in;
   }
   
   .fade-in.appear {

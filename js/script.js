@@ -101,3 +101,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
+window.addEventListener('load', function() {
+    var loadingScreen = document.getElementById('loading');
+    
+    // Hide the loading animation
+    loadingScreen.style.display = 'none';
+});
